@@ -1,0 +1,128 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: url("./images/bg-pattern-desktop.svg");
+}
+
+.container {
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  width: 80%;
+  height: 90vh;
+  padding: 10px;
+}
+.container .girl {
+  width: fit-content;
+  height: 100%;
+  margin-bottom: 0px;
+}
+img {
+  margin-bottom: 120px;
+}
+.container .title {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+  letter-spacing: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+h1 {
+  letter-spacing: 10px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+.container h1 {
+  font-size: 60px;
+}
+.right {
+  padding: 30px 160px;
+}
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+.input {
+  position: relative;
+}
+input {
+  font-size: 16px;
+  padding: 20px 30px;
+  width: 95%;
+  height: 30px;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid rgb(162, 159, 159);
+  outline: none;
+  cursor: pointer;
+}
+.arrow {
+  width: 16px;
+  height: 20px;
+  padding: 20px 42px 13px 40px;
+  position: absolute;
+  opacity: 0.6;
+  top: 0;
+  right: 0;
+  border-radius: 30px;
+  background-color: red;
+  margin: 0px;
+  cursor: pointer;
+}
+.arrow:hover {
+  opacity: 1;
+}
+.error {
+  margin: 0px;
+  position: absolute;
+  right: 100px;
+  top: 10px;
+  opacity: 1;
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .right {
+    width: 95%;
+    padding: 20px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 28px !important;
+  }
+  .girl {
+    content: url("./images/hero-mobile.jpg");
+
+    height: 100px;
+
+    width: 100% !important;
+  }
+  .logo {
+    display: none;
+  }
+  input {
+    border: none;
+    width: 80%;
+  }
+  .arrow {
+    width: 16px;
+    height: 20px;
+    padding: 20px 42px 13px 42px !important;
+    position: absolute;
+    opacity: 0.6;
+    top: 0;
+    right: 0;
+    border-radius: 30px;
+    background-color: red;
+    margin: 0px;
+    cursor: pointer;
+  }
+}
